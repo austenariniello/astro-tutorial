@@ -1,5 +1,8 @@
 ---
-const { pageTitle, pageLink } = Astro.props;
+import NavLink from './NavLink.astro';
 ---
-
-<a href={pageLink}>{pageTitle}</a>
+<div id="main-menu" class="nav-links">
+    <NavLink pageLink="/" pageTitle="Home" />
+    <NavLink pageLink="/about/" pageTitle="About" />
+    <NavLink pageLink="/blog/" pageTitle="Blog" />
+</div>
